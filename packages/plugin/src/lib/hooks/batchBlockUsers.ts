@@ -98,7 +98,7 @@ export const batchBlockUsersMutation = async <T extends User>(options: {
   try {
     let lastBlockedIndex = 0
     let realBlockedCount = 0
-    const MAX_BLOCK_COUNT = 150
+    const MAX_BLOCK_COUNT = 99999
     await batchBlockUsers(users, {
       signal: controller.signal,
       blockUser: async (user) => {
